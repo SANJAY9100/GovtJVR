@@ -1,0 +1,40 @@
+    /*
+    colours:#04BBE4;#04C3EA;#09115D;#16F485
+    */
+    *{
+        margin: 0;
+        padding: 0;
+        border:0;    
+    }
+    
+    .slider_bg_1 {
+        background:-webkit-linear-gradient(0deg, #04C3EA 0%, #09115D 100%);
+    }
+    .header {
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
+    .sociallink:hover
+    {
+        opacity: 0.5;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }  
+    
+    
+   
+    
+
+
+
+      

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/efb1efca3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="source/style.css">
+    <script> 
+      $(function(){
+        $("#header").load("source/commonheader.html"); 
+        $("#footer").load("source/commonfooter.html"); 
+      });
+      </script> 
+  </head>
+  
+  <body>
+    <div class="container-fluid container-lg p-0">
+        <div class="header sticky-top" id="header"></div>
+        <div class="row m-2 d-flex justify-content-center p-5" style="box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.2);border-radius: 30px;" >
+            <div class="col-12 text-center m-2 p-2" >
+                <img class="" src="source/contact-us1.png" style="max-width: 100%;">
+                <br>
+                <hr class="mx-auto" width="95%">
+                <h5><strong> Connect With Us </strong>
+                    <br class="d-block d-md-none"> 
+                    <a href="#" class="text-dark sociallink"><i class="fab fa-facebook-square mx-1"></i></a>
+                    <a href="#"  class="text-dark sociallink"><i class="fab fa-youtube mx-1"></i></a>
+                    <a href="#"  class="text-dark sociallink"><i class="fab fa-telegram-plane m-1"></i></a>
+                    <a href="#" class="text-dark sociallink"><i class="fab fa-linkedin m-1"></i></a>
+                </h5>
+            </div> 
+            <div class="col-12 col-md-10 col-lg-8">             
+                <form action="">
+                    <div class="form-group">
+                        <label  for="name"><strong> Name:* </strong></label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label  for="email"><strong>Email:* </strong> </label>
+                        <input inputmode="email" type="email" class="form-control" id="email" placeholder="abc@email.com" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label  for="number"><strong> Number : </strong></label>
+                        <input inputmode="tel" type="text"  class="form-control" id="number" placeholder="9876543210" name="number">
+                    </div>
+                    <div class="form-group">
+                        <label  for="subject"><strong>Subject:</strong> </label>
+                        <input type="text"  class="form-control" id="subject" placeholder="Enter Subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label  for="message"><strong>Message:*</strong></label>
+                        <textarea class="form-control" rows="5" placeholder="Write your queries here..." id="message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                    <input class="btn btn-primary mt-2 px-4 py-2" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>  
+        </div>
+        <div id="footer"></div>   
+    </div>
+  </body>
+</html>
